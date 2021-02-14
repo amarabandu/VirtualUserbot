@@ -66,7 +66,6 @@ async def _(event):
         parse_mode="HTML",
         file=kk,
         force_document=True,
-        allow_cache=False,
     )
     os.system(f"rm {kk}")
 
