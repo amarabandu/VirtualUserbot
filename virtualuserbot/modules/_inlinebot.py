@@ -43,11 +43,11 @@ if lang == "si":
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**Showing Stats For {DEFAULTUSER}'s VirtualUserbot** \nNote --> Only Owner Can Check This \n(C) [VirtualUserbot](https://github.com/inukaasith/virtualuserbot)",
+                text=f"**Showing Stats For {DEFAULTUSER}'s VirtualUserbot** \nNote --> Only Owner Can Check This \n(C) [VirtualUserbot](https://github.com/imjanindu/virtualuserbot)",
                 buttons=[
                     [custom.Button.inline("Show Stats ?", data="terminator")],
-                    [Button.url("Developed By", "https://github.com/Inukaasith")],
-                    [Button.url("Support Chat❤️", "t.me/InfinityJE")],
+                    [Button.url("Developed By", "https://github.com/ImJanindu")],
+                    [Button.url("Support Chat ❤️", "t.me/InfinityJE")],
                 ],
             )
             await event.answer([result])
@@ -113,7 +113,7 @@ if lang == "si":
         plugin_name = event.data_match.group(1).decode("UTF-8")
         if plugin_name in CMD_HELP:
             help_string = (
-                f"**🦹‍♀️ PLUGIN NAME 🦹‍♀️ :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
+                f"**🧩 PLUGIN NAME 🧩 :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
             )
         reply_pop_up_alert = help_string
         reply_pop_up_alert += "\n\n**(C) @VirtualUserbot ** ".format(plugin_name)
@@ -388,7 +388,7 @@ else:
         plugin_name = event.data_match.group(1).decode("UTF-8")
         if plugin_name in CMD_HELP:
             help_string = (
-                f"**🦹‍♀️ PLUGIN NAME 🦹‍♀️ :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
+                f"**🧩 PLUGIN NAME 🧩 :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
             )
         reply_pop_up_alert = help_string
         reply_pop_up_alert += "\n\n**(C) @VirtualUserbot** ".format(plugin_name)
