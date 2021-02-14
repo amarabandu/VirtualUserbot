@@ -7,8 +7,6 @@ import requests
 from virtualuserbot import CMD_HELP
 from virtualuserbot.utils import admin_cmd
 
-fridaythumb = "./resources/IMG_20200929_103719_628.jpg"
-
 
 def main(url, filename):
     try:
@@ -65,7 +63,6 @@ async def _(event):
     await borg.send_message(
         event.chat_id,
         caption,
-        thumb=fridaythumb,
         parse_mode="HTML",
         file=kk,
         force_document=True,
