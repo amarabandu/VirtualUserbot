@@ -717,7 +717,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     testinput = event.pattern_match.group(1)
     starkisnub = urllib.parse.quote_plus(testinput)
     results = []
-    search = f"http://starkmusic.herokuapp.com/result/?query={starkisnub}"
+    search = f"http://snobybuddymusic.herokuapp.com/result/?query={starkisnub}"
     seds = requests.get(url=search).json()
     for okz in seds:
         okz["album"]
