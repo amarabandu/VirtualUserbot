@@ -43,7 +43,7 @@ if lang == "si":
         ms = (end - start).microseconds / 1000
         uptime = get_readable_time((time.time() - Lastupdate))
         await starkislub.edit(
-            f"**🙈වැඩ වැඩ මහත්තයෝ⚙🔧** \n **ᵐʸ ᶜᵘʳʳᵉⁿᵗ ᵖᶦⁿᵍʳᵃᵗᵉ**👇 \n \n ⚡️ `{ms}` \n ⚡️ `{uptime}`"
+            f"**වැඩ වැඩ මහත්තයෝ 🥳** \n **My Current Ping**👇 \n \n ⚡️ `{ms}` \n ⚡️ `{uptime}`"
         )
 
 
@@ -86,7 +86,7 @@ else:
         ms = (end - start).microseconds / 1000
         uptime = get_readable_time((time.time() - Lastupdate))
         await starkislub.edit(
-            f"**🙈I'm Online, Master ⚙🔧** \n **ᵐʸ ᶜᵘʳʳᵉⁿᵗ ᵖᶦⁿᵍʳᵃᵗᵉ**👇 \n \n ⚡️ `{ms}` \n ⚡️ `{uptime}`"
+            f"**I'm Online, Master 🥳** \n **My Current Ping**👇 \n \n ⚡️ `{ms}` \n ⚡️ `{uptime}`"
         )
 
 
