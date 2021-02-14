@@ -54,7 +54,7 @@ pm_caption += "➣ **License**: [GNU GPLv3.0](github.com/imjanindu/virtualuserbo
 pm_caption += "➣ **Copyright**: [@virtualuserbot](https://github.com/imjanindu/virtualuserbot)\n"
 pm_caption += "➣ **Check **: `.stat`\n"
 pm_caption += "➣ **Contact Dev**: [Developer](https://t.me/ImJanindu)\n\n"
-pm_caption += "➣ [🇱🇰 Get Your Virtual Userbot 🇱🇰](https://t.me/ImJanindu/Virtualuserbot)\n"
+pm_caption += "[🇱🇰 Get Your Virtual Userbot 🇱🇰](https://github.com/ImJanindu/Virtualuserbot)\n"
 
 
 @friday.on(friday_on_cmd(pattern=r"alive"))
