@@ -1,1 +1,1 @@
-virtualuserbot: python -m virtualuserbot
+userbot: python -m virtualuserbot
