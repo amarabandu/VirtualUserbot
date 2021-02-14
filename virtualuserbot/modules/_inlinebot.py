@@ -319,7 +319,7 @@ else:
                     [custom.Button.inline("Show Stats ?", data="terminator")],
                     [
                         Button.url(
-                            "Repo Here", "https://github.com/inukaasith/virtualuserbot"
+                            "Repo Here", "https://github.com/ImJanindu/VirtualUserbot"
                         )
                     ],
                     [Button.url("Join Channel ❤️", "t.me/infinity_bots")],
