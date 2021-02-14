@@ -86,7 +86,7 @@ async def dyno_usage(dyno):
         dyno,
         "**Dyno Usage Data**:\n\n"
         f"✗ **APP NAME =>** `{Var.HEROKU_APP_NAME}` \n"
-        f"✗ **Usage in Hours And Minutes =>** `{AppHours}h`  `{AppMinutes}m`"
+        f"✗ **Usage in Hours And Minutes =>** `{AppHours}h`  `{AppMinutes}m`\n"
         f"✗ **Usage Percentage =>** [`{AppPercentage} %`]\n"
         "\n\n"
         "✗ **Dyno Remaining This Months 📆:**\n"
