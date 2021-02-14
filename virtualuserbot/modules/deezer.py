@@ -133,7 +133,7 @@ async def _(event):
 
 Music Downloaded And Uploaded By Friday Userbot
 
-Get Your Friday From @FridayOT"""
+Get Your Own Userbot @virtualuserbot"""
     await ommhg.edit("Song Downloaded.  Waiting To Upload. 🥳🤗")
     c_time = time.time()
     uploaded_file = await upload_file(
