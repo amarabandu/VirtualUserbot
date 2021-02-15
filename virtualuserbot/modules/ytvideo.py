@@ -81,7 +81,7 @@ def time_formatter(milliseconds: int) -> str:
 
 
 
-@borg.on(admin_cmd(pattern="vsong (.*)"))
+@borg.on(admin_cmd(pattern="ytvideo (.*)"))
 async def download_video(v_url):  
     pro = v_url ; sender = await pro.get_sender() ; me = await pro.client.get_me()
     pro1 = v_url.text
@@ -91,7 +91,7 @@ async def download_video(v_url):
     	dc = await pro.edit("`processing, please wait...`")   
     teamcobra = pro1[8:]
     if not teamcobra:
-         return await dc.edit("`Error \nusage .vsong <song name>`")
+         return await dc.edit("`Error \nusage .ytvideo <song name>`")
     search = SearchVideos(teamcobra, offset = 1, mode = "json", max_results = 1)
     test = search.result()
     p = json.loads(test)
@@ -193,7 +193,15 @@ async def download_video(v_url):
             caption=darkcobra_data['title'],
             progress_callback=lambda d, t: asyncio.get_event_loop(
             ).create_task(
-                progress(d, t, v_url, c_time, "Uploading..",
+                progress(d, t, v_url, c_time, "Uploading...",
                          f"{darkcobra_data['title']}.mp4")))
         os.remove(f"{darkcobra_data['id']}.mp4")
         await dc.delete()
+		  
+CMD_HELP.update(
+    {
+        "ytvideo": "**YtVideo**\
+\n\n**Syntax : **`.ytvideo <song name>`\
+\n**Usage :** Downloads video songs from youtube\"
+    }
+)
