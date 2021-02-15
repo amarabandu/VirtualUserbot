@@ -6,6 +6,9 @@
 
 ### I'll Make This Back Alive For Me. Because This Userbot Has Sinhala Language. If you from Sri Lanka, This Is The Best Userbot For You ❤
 
-### You Can Use Original Repo [Friday Here](https://github.com/DevsExpo/FridayUserbot)
+### If Not You Can Use Original Repo [Friday Userbot Here](https://github.com/DevsExpo/FridayUserbot)
 
 #### Use At Your Own Risk. I'm Not Responsible For That 🙃
+
+##### Developed by [@ImJanindu](t.me/ImJanindu)
+##### All The Credits Goes To [@FridayOT](t.me/FridayOT)
