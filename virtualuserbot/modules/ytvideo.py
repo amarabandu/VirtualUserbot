@@ -7,7 +7,7 @@ import asyncio, json
 from youtube_dl import YoutubeDL
 from pySmartDL import SmartDL
 from virtualuserbot import CMD_HELP
-from userbot.utils import progress
+from virtualuserbot.function import progress
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
                               ExtractorError, GeoRestrictedError,
                               MaxDownloadsReached, PostProcessingError,
