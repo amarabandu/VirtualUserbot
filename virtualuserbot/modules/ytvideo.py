@@ -202,6 +202,6 @@ CMD_HELP.update(
     {
         "ytvideo": "**YtVideo**\
 \n\n**Syntax : **`.ytvideo <song name>`\
-\n**Usage :** Downloads video songs from youtube\"
+\n**Usage : **Downloads video songs from youtube**"
     }
 )
