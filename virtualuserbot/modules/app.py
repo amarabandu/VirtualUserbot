@@ -154,10 +154,9 @@ async def apkr(event):
 
 CMD_HELP.update(
     {
-        "app": ".app [app name]\
-\nUsage: searches the app in the playstore and provides the link to the app in playstore and fetchs app details \
-\n\n.appr [app name]\
-\nUsage: searches the app in the playstore and provides the link to the app in playstore and fetchs app details with Xpl0iter request link. \
-"
+        "app": ".app <app name>\
+\nUsage: Searches the app in the playstore and provides the link to the app in playstore and fetchs app details \
+\n\n.akd <app name>\
+\nUsage: Downloads the app in playstore and uploads to telegram"
     }
 )
