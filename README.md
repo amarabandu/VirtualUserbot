@@ -5,3 +5,5 @@
 ### I'll Make This Back Alive For Me ❤
 
 ### You Can Use Original Repo [Friday Here](https://github.com/DevsExpo/FridayUserbot)
+
+#### Use At Your Own Risk. I'm Not Responsible For That.
