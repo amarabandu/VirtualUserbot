@@ -9,13 +9,13 @@ import os
 import random
 from time import sleep
 from urllib.parse import quote_plus
-
+from virtualuserbot.utils import friday_on_cmd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
 from virtualuserbot import CHROME_DRIVER, CMD_HELP, GOOGLE_CHROME_BIN
-from virtualuserbot.utils import friday_on_cmd
+from virtualuserbot.utils import register
 
 CARBONLANG = "auto"
 LANG = "en"
@@ -23,6 +23,8 @@ LANG = "en"
 
 @friday.on(friday_on_cmd(pattern="carbon"))
 async def carbon_api(e):
+    if e.fwd_from:
+        return
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
 
         """ A Wrapper for carbon.now.sh """
@@ -66,37 +68,17 @@ async def carbon_api(e):
             "params": {"behavior": "allow", "downloadPath": download_path},
         }
         driver.execute("send_command", params)
-        driver.find_element_by_xpath(
-            "/html/body/div[1]/main/div[3]/div[2]/div[1]/div[1]/div/span[2]"
-        ).click()
-        if skeme != None:
-            k_skeme = driver.find_element_by_xpath(
-                "/html/body/div[1]/main/div[3]/div[2]/div[1]/div[1]/div/span[2]/input"
-            )
-            k_skeme.send_keys(skeme)
-            k_skeme.send_keys(Keys.DOWN)
-            k_skeme.send_keys(Keys.ENTER)
-        else:
-            color_scheme = str(random.randint(1, 29))
-            driver.find_element_by_id(("downshift-0-item-" + color_scheme)).click()
-        driver.find_element_by_id("export-menu").click()
-        driver.find_element_by_xpath("//button[contains(text(),'4x')]").click()
-        driver.find_element_by_xpath("//button[contains(text(),'PNG')]").click()
+        driver.find_element_by_xpath("//button[contains(text(),'Export')]").click()
         await e.edit("`Processing..\n75%`")
         # Waiting for downloading
         sleep(2.5)
-        color_name = driver.find_element_by_xpath(
-            "/html/body/div[1]/main/div[3]/div[2]/div[1]/div[1]/div/span[2]/input"
-        ).get_attribute("value")
         await e.edit("`Done Dana Done...\n100%`")
         file = "./carbon.png"
         await e.edit("`Uploading..`")
         await e.client.send_file(
             e.chat_id,
             file,
-            caption="<< `Here's your carbon!` \n **Carbonised By** [VirtualUserbot](https://github.com/inukaasith/virtualuserbot)>>\n**Colour Scheme: **`{}`".format(
-                color_name
-            ),
+            caption="<< `Here's your carbon!` \n **Carbonised Using** [Friday](https://github.com/Starkgang/FridayUserbot)>>",
             force_document=True,
             reply_to=e.message.reply_to_msg_id,
         )
