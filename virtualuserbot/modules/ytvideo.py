@@ -86,12 +86,12 @@ async def download_video(v_url):
     pro = v_url ; sender = await pro.get_sender() ; me = await pro.client.get_me()
     pro1 = v_url.text
     if not sender.id == me.id:
-        dc = await pro.reply("`processing, please weit...`")
+        dc = await pro.reply("`processing, please wait...`")
     else:
-    	dc = await pro.edit("`processing, please weit...😍`")   
+    	dc = await pro.edit("`processing, please wait...`")   
     teamcobra = pro1[8:]
     if not teamcobra:
-         return await dc.edit("`Error \nusage vsong <song name>`")
+         return await dc.edit("`Error \nusage .vsong <song name>`")
     search = SearchVideos(teamcobra, offset = 1, mode = "json", max_results = 1)
     test = search.result()
     p = json.loads(test)
@@ -130,7 +130,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await dc.edit("`Fetching data, please wait... 😋😍`")
+        await dc.edit("`Fetching data, please wait...`")
         with YoutubeDL(opts) as darkcobra:
             darkcobra_data = darkcobra.extract_info(teamcobra)
     except DownloadError as error:
@@ -141,7 +141,7 @@ async def download_video(v_url):
         return
     except GeoRestrictedError:
         await dc.edit(
-            "`Video is not available from your geographic location due to geographic restrictions imposed by a website🤔.`"
+            "`Video is not available from your geographic location due to geographic restrictions imposed by a website 🤔`"
         )
         return
     except MaxDownloadsReached:
@@ -164,7 +164,7 @@ async def download_video(v_url):
         return
     c_time = time.time()
     if song:
-        await dc.edit(f"`Preparing to upload your video song 🤗 `\
+        await dc.edit(f"`Preparing to upload your video song 🤗`\
         \n**{darkcobra_data['title']}**\
         \nby *{darkcobra_data['uploader']}*")
         await v_url.client.send_file(
@@ -183,7 +183,7 @@ async def download_video(v_url):
         os.remove(f"{darkcobra_data['id']}.mp3")
         await v_url.delete()
     elif video:
-        await dc.edit(f"`Preparing to upload your video song 🤗❤ :`\
+        await dc.edit(f"`Preparing to upload your video song ❤`\
         \n**{darkcobra_data['title']}**\
         \nby *{darkcobra_data['uploader']}*")
         await v_url.client.send_file(
