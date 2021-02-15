@@ -12,4 +12,4 @@
 
 #### Developed by [@ImJanindu](t.me/ImJanindu)
 
-All The Credits Goes To [@FridayOT](t.me/FridayOT)
+<b>All The Credits Goes To [@FridayOT](t.me/FridayOT)</b>
