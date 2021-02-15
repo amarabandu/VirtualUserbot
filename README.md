@@ -8,7 +8,9 @@
 
 ### If Not You Can Use Original Repo [Friday Userbot Here](https://github.com/DevsExpo/FridayUserbot)
 
-#### Use At Your Own Risk. I'm Not Responsible For That 🙃
+#### Important - Do Not Install Any Fake Plugins. When Update Has Noticed Only Do `.update now` 🙃
+
+<b>Join Our Official Channel To Get Noticed [@Virtualuserbot](https://t.me/virtualuserbot)</b>
 
 #### Developed by [@ImJanindu](https://t.me/ImJanindu)
 
