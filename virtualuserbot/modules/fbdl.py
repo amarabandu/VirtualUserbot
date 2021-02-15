@@ -57,7 +57,7 @@ async def _(event):
 
     kk = f"{filename}.mp4"
     caption = (
-        f"Facebook Video Successfully by Fridaybot.\nGet Your Fridaybot From @Fridayot."
+        f"Facebook Video Successfully by VirtualUserbot\nGet Your Userbot From @virtualuserbot."
     )
 
     await borg.send_message(
