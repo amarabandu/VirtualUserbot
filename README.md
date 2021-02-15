@@ -10,6 +10,6 @@
 
 #### Use At Your Own Risk. I'm Not Responsible For That 🙃
 
-#### Developed by [@ImJanindu](t.me/ImJanindu)
+#### Developed by [@ImJanindu](https://t.me/ImJanindu)
 
-<b>All The Credits Goes To [@FridayOT](t.me/FridayOT)</b>
+<b>All The Credits Goes To [@FridayOT](https://t.me/FridayOT)</b>
